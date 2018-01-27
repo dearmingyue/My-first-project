@@ -1,0 +1,1161 @@
+/*初始化代码*/
+body,
+a,
+p,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+div,
+span,
+i,
+em,
+img,
+b,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+input {
+    border: 0 none;
+    outline: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    /*background-color: #222224;*/
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ta {
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*项目头部开始*/
+
+#NIE-topBar .hide, #NIE-topBar-include .hide {
+    display: none !important
+}
+
+.NIE-topBar-logo, .NIE-topBar-arrIcon i, #NIE-topBar-menu span, .NIE-topBar-hot, .NIE-topBar-1st, .NIE-topBar-new, .NIE-topBar-btn {
+    background: url(../images/sprite-w_7fc7459.png) no-repeat
+}
+
+.NIE-topBar-arrIcon {
+    position: relative;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.NIE-topBar-arrIcon i {
+    width: 9px;
+    height: 4px;
+    float: left;
+    margin: 6px 0 0 4px;
+    background-position: -103px -101px;
+    display: inline-block;
+    -webkit-transition: all .2s ease 0s;
+    transition: all .2s ease 0s
+}
+
+#NIE-topBar, #NIE-topBar-include {
+    position: relative;
+    z-index: 9999;
+    min-width: 1000px;
+    height: 40px;
+    background: #333;
+    line-height: 24px;
+    font-family: "Microsoft YaHei", simSun, "Lucida Grande", "Lucida Sans Unicode", Arial
+}
+
+#NIE-topBar *, #NIE-topBar-include * {
+    font-size: 12px;
+    font-style: normal
+}
+
+#NIE-topBar a, #NIE-topBar-include a {
+    color: #999;
+    text-decoration: none
+}
+
+#NIE-topBar a:hover, #NIE-topBar-include a:hover {
+    color: #fff
+}
+
+#NIE-topBar ul, #NIE-topBar li, #NIE-topBar-include ul, #NIE-topBar-include li {
+    margin: 0;
+    padding: 0;
+    float: left
+}
+
+.NIE-topBar-main {
+    position: relative;
+    z-index: 9999;
+    width: 1000px;
+    margin: auto
+}
+
+.NIE-topBar-logo {
+    width: 133px;
+    height: 44px;
+    display: block;
+    float: left;
+    margin-top: 6px;
+    background: url(../images/logo_b5525b7.png) no-repeat
+}
+
+#NIE-topBar-news {
+    position: absolute;
+    z-index: 13;
+    width: 420px;
+    height: 54px;
+    left: 125px;
+    padding-left: 18px;
+    padding-top: 0;
+    overflow: hidden;
+    display: block
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover {
+    height: 250px;
+    overflow: visible;
+    border-color: #1f1f1f
+}
+
+#NIE-topBar-news a {
+    width: 960px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -o-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+}
+
+#NIE-topBar-news-close {
+    position: absolute;
+    top: 63px;
+    right: -380px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    background: url(../images/sprite-w_7fc7459.png) no-repeat -9999px -9999px;
+    text-indent: -9999px;
+    z-index: 2
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover .NIE-topBar-abc-s {
+    visibility: hidden
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover a {
+    position: absolute;
+    z-index: 2;
+    left: -132px;
+    top: 55px;
+    height: auto
+}
+
+#NIE-topBar-news.NIE-topBar-news-hover a img {
+    display: block
+}
+
+.NIE-topBar-mid {
+    position: absolute;
+    z-index: 2;
+    right: 230px;
+    width: 385px;
+    text-align: right
+}
+
+#NIE-topBar .NIE-topBar-mid a, #NIE-topBar-include .NIE-topBar-mid a {
+    line-height: 40px;
+    padding: 0 12px;
+    color: #fff;
+    display: inline-block
+}
+
+#NIE-topBar .NIE-topBar-mid a:hover, #NIE-topBar-include .NIE-topBar-mid a:hover {
+    color: #ca0b0b
+}
+
+#NIE-topBar-menu {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    color: #999;
+    width: 1000px;
+    height: 40px;
+    overflow: hidden;
+    -webkit-transition: height .3s ease 0s;
+    -o-transition: height .3s ease 0s;
+    -moz-transition: height .3s ease 0s;
+    transition: height .3s ease 0s
+}
+
+#NIE-topBar-menu span {
+    position: absolute;
+    width: 108px;
+    padding: 8px 0 12px;
+    height: 20px;
+    line-height: 14px;
+    right: 106px;
+    background-position: 0 -28px;
+    background-repeat: repeat-x;
+    padding-left: 15px;
+    color: #fff;
+    display: inline-block;
+    overflow: hidden
+}
+
+#NIE-topBar-menu .NIE-table {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #262626;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%
+}
+
+#NIE-topBar-menu .NIE-table a {
+    width: 115px;
+    margin-left: 6px;
+    line-height: 24px;
+    display: inline-block;
+    font-weight: 400
+}
+
+#NIE-topBar-menu .NIE-table a.long {
+    width: 125px
+}
+
+#NIE-topBar-menu .NIE-table ul {
+    list-style: none
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav {
+    width: 100%;
+    position: relative
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav li {
+    width: 110px;
+    float: left;
+    border-right: 1px solid #eee;
+    vertical-align: top
+}
+
+#NIE-topBar-menu .NIE-table .NIE-nav .mobi {
+    position: absolute;
+    left: 300px;
+    -webkit-transition: all .3s ease-out
+}
+
+#NIE-topBar-menu .NIE-table b {
+    line-height: 39px;
+    color: #bc2e2e;
+    display: block;
+    width: 100%;
+    height: 39px;
+    font-size: 14px;
+    text-indent: 20px;
+    background: #f7f7f8;
+    overflow: hidden;
+    clear: both
+}
+
+#NIE-topBar-menu b i {
+    margin-left: 5px;
+    padding: 2px 4px;
+    color: #9b9b9b;
+    font-style: normal;
+    background: #111;
+    display: inline
+}
+
+#NIE-topBar-menu .NIE-list {
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    height: 435px
+}
+
+.w1680 #NIE-topBar-menu .NIE-list {
+    height: 450px
+}
+
+#NIE-topBar-menu .NIE-list li {
+    border-right: 1px solid #eee;
+    height: 415px;
+    float: left;
+    padding: 10px 0 0 14px;
+    overflow: hidden
+}
+
+#NIE-topBar-menu .NIE-list .news {
+    position: absolute;
+    background: #fdfefe;
+    left: 446px;
+    -webkit-transition: all .3s ease-out;
+    top: 39px
+}
+
+#NIE-topBar-menu .NIE-list .hot {
+    position: absolute;
+    background: #fdfefe;
+    left: 300px;
+    -webkit-transition: all .3s ease-out;
+    top: 39px;
+    z-index: 3
+}
+
+#NIE-topBar-menu .NIE-list .hot a {
+    width: 121px
+}
+
+#NIE-topBar-menu .NIE-list .short {
+    -webkit-transition: all .3s ease-out
+}
+
+#NIE-topBar-menu .NIE-list .short a {
+    width: 105px
+}
+
+.w1680 #NIE-topBar-menu .NIE-list .news div div {
+    margin-right: 8px
+}
+
+#NIE-topBar-menu .NIE-list .news .long-news {
+    width: 133px;
+    float: left
+}
+
+#NIE-topBar-menu .NIE-list .news .long-news a {
+    width: 125px
+}
+
+#NIE-topBar-menu .NIE-list .news .short-news {
+    float: left;
+    width: 106px
+}
+
+#NIE-topBar-menu .NIE-list .news .mini-news {
+    width: 90px;
+    margin-right: 0;
+    float: left
+}
+
+#NIE-topBar-menu .NIE-list .news .mini-news a {
+    width: 82px
+}
+
+#NIE-topBar-menu .moreAni .NIE-list .news {
+    left: 179px;
+    width: 730px !important;
+    -webkit-transition: all .3s ease-out;
+    z-index: 3
+}
+
+.w1680 #NIE-topBar-menu .moreAni .NIE-list .news {
+    left: 334px;
+    width: 780px !important;
+    -webkit-transition: all .3s ease-out;
+    z-index: 3
+}
+
+#NIE-topBar-menu .moreAni .NIE-list .hot {
+    left: 30px;
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+    -webkit-transition: all .3s ease-out
+}
+
+.w1680 #NIE-topBar-menu .moreAni .NIE-list .hot {
+    left: 185px;
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+    -webkit-transition: all .3s ease-out
+}
+
+#NIE-topBar-menu .moreAni .NIE-nav .mobi {
+    left: 30px;
+    width: 892px !important;
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+    -webkit-transition: all .3s ease-out
+}
+
+.w1680 #NIE-topBar-menu .moreAni .NIE-nav .mobi {
+    left: 185px;
+    width: 942px !important;
+    border-left: 1px solid #eee;
+    box-shadow: -1px 0 1px #eee;
+    -webkit-transition: all .3s ease-out
+}
+
+#NIE-topBar-menu .NIE-list .NIE-topBar-more {
+    width: 20px !important;
+    height: 95px;
+    height: 92px \9;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 124px;
+    font-size: 12px;
+    color: #fff;
+    background: #bc2e2e;
+    padding-left: 10px;
+    line-height: 14px;
+    padding-top: 7px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px
+}
+
+#NIE-topBar-menu .NIE-list .NIE-topBar-more:hover {
+    opacity: .8
+}
+
+#NIE-topBar-menu .moreAni .NIE-topBar-more, #NIE-topBar-menu .NIE-topBar-more.open {
+    width: 21px;
+    height: 23px;
+    border-radius: 2px;
+    right: 9px;
+    top: 163px;
+    padding-left: 4px;
+    padding-top: 2px;
+    height: 20px;
+    height: 18px \9
+
+}
+
+.w1680 #NIE-topBar-menu .NIE-list .NIE-topBar-more {
+}
+
+#NIE-topBar-menu .NIE-table a em {
+    font-weight: 400;
+    display: block;
+    line-height: 24px
+}
+
+.NIE-topBar-1st {
+    background-position: right -267px
+}
+
+.NIE-topBar-hot {
+    background-position: right -144px
+}
+
+.NIE-topBar-new {
+    background-position: right -206px
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover .NIE-table {
+    display: block
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover {
+    height: 530px;
+    opacity: .9;
+    -webkit-transition: height .4s ease 0s;
+    -o-transition: height .4s ease 0s;
+    -moz-transition: height .4s ease 0s;
+    transition: height .4s ease 0s
+}
+
+a.NIE-topBar-btn {
+    width: 105px !important;
+    height: 18px;
+    line-height: 18px !important;
+    margin: 5px 0;
+    display: inline-block;
+    padding-left: 0 !important;
+    background-position: 0 -338px;
+    text-indent: 25px;
+    color: #bc3030 !important
+}
+
+a.NIE-topBar-btn:hover {
+}
+
+.NIE-topBar-ad {
+    height: 40px;
+    left: 50%
+}
+
+.NIE-topBar-main.w1680 {
+    width: 1260px
+}
+
+.NIE-topBar-main.w1680 #NIE-topBar-menu {
+    width: 1260px
+}
+
+#NIE-topBar-news {
+    height: 54px
+}
+
+#NIE-topBar .NIE-topBar-menu-hover, #NIE-topBar-include .NIE-topBar-menu-hover {
+    z-index: 8
+}
+
+.NIE-topBar-ad-big {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 0;
+    overflow: hidden;
+    text-align: center
+}
+
+#NIE-topBar-menu {
+    z-index: 7;
+    height: 55px
+}
+
+.NIE-topBar-mid {
+    z-index: 12;
+    width: 250px;
+    right: 230px;
+    width: 536px
+}
+
+.NIE-topBar-logo {
+    position: relative;
+    z-index: 13 !important
+}
+
+#NIE-topBar, #NIE-topBar-include {
+    height: 55px;
+    background: #fbfbfb
+}
+
+.NIE-topBar-logo {
+    margin-top: 5px
+}
+
+#NIE-topBar-menu .NIE-table {
+    top: 55px;
+    background: #fdfefe;
+    border-top: 1px solid #ececec;
+    margin: 0
+}
+
+#NIE-topBar-menu span {
+    background: 0 0;
+    color: #bc2e2e
+}
+
+#NIE-topBar-menu .NIE-table {
+    display: none
+}
+
+#NIE-topBar-menu .NIE-table .last_td, #NIE-topBar-menu .NIE-table .last_th {
+    border-right: 0
+}
+
+#NIE-topBar a, #NIE-topBar-include a {
+    color: #626262
+}
+
+#NIE-topBar-menu b i {
+    background-color: #fbfbfb;
+    color: #bc2e2e
+}
+
+#NIE-topBar-menu p {
+    padding: 0;
+    margin: 0;
+    margin-left: 6px;
+    line-height: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #626262
+}
+
+#NIE-topBar a:hover, #NIE-topBar-include a:hover {
+    color: #bc2e2e
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover {
+    opacity: .95
+}
+
+#NIE-topBar-menu .NIE-table * {
+    font-size: 12px
+}
+
+#NIE-topBar-menu.NIE-topBar-menu-hover span {
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+    background-image: -webkit-linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    background-image: linear-gradient(top, #F3F3F3 0, #FEFEFE 52px)
+}
+
+#NIE-topBar-menu span {
+    height: 25px;
+    height: 26px \0;
+    width: 108px;
+    padding-top: 15px;
+    padding-top: 14px \0;
+    transition: background ease-in-out .33s;
+    z-index: 20
+}
+
+#NIE-topBar .NIE-topBar-mid a, #NIE-topBar-include .NIE-topBar-mid a {
+    color: #333;
+    line-height: 52px;
+    transition: background ease-in-out .33s;
+    *line-height: 55px
+}
+
+#NIE-topBar .NIE-topBar-mid a:hover, #NIE-topBar-include .NIE-topBar-mid a:hover {
+    color: #bc2e2e !important;
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+    background-image: -webkit-linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    background-image: linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    *border-bottom: 0
+}
+
+.NIE-topBar-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100px;
+    height: 55px;
+    overflow: hidden;
+    z-index: 9
+}
+
+.NIE-topBar-right a {
+    color: #333 !important;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    line-height: 52px;
+    transition: background ease-in-out .33s;
+    -webkit-transition: background ease-in-out .33s
+}
+
+.NIE-topBar-right a:hover {
+    color: #bc2e2e !important;
+    border-bottom: 3px solid #bc2e2e;
+    background-color: #F3F3F3;
+    background-image: -webkit-linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    background-image: linear-gradient(top, #F3F3F3 0, #FEFEFE 52px);
+    *border-bottom: 0
+}
+
+.NIE-topBar-right .t_news{
+    height:55px;
+    overflow:hidden;
+    position:relative;
+}
+.NIE-topBar-right .t_news a{
+    width: 100px;
+}
+
+.NIE-topBar-right .news_li,.swap{
+    line-height:52px;
+    display:inline-block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.NIE-topBar-right .swap{
+    top:52px;
+}
+/*项目头部结束*/
+/*项目内容开始*/
+.inner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: url("../images/bg-repeat_c60bbf5.jpg")
+}
+.inner .inner-repeat .inner-out-bg {
+    height: 100%;
+    background: url("../images/bg_top_f407780.jpg") no-repeat center top;
+}
+
+.inner .bg-repeat {
+    height: 100%;
+    overflow: hidden;
+    background: url("../images/bg_bottom_d2f7155.jpg")
+    no-repeat center bottom;
+}
+/*滚动效果*/
+#drop {
+    width: 50px;
+    height: 45px;
+    position: fixed;
+    right: 50px;
+    bottom: 300px;
+    display:none;
+    background: url("../images/inner_z_c016bbf.png") no-repeat -369px -155px;
+}
+#drop:hover {
+    background: url("../images/inner_z_c016bbf.png") no-repeat -295px -209px;
+}
+/*滚动效果*/
+.inner .inner-menu {
+    width: 1006px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.inner .inner-menu li {
+    float: left;
+    width: 130px;
+    height: 29px;
+    position: relative;
+}
+
+.inner .inner-menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images/nav_d41b73b_1.png") no-repeat;
+}
+.inner .inner-menu li .menu4 {
+    width: 260px;
+    height: 85px;
+    background-image: url("../images/nav_z_2ae8ddb.png");
+    background-position: 0 0;
+    top: -20px;
+    left: -15px;
+}
+
+.inner .inner-menu .logo {
+    width: 226px;
+}
+
+.inner .inner-menu .menu1 {
+    background-position: 0 0
+}
+
+.inner .inner-menu .menu1:hover, .menu1.active {
+    background-position: 0 -29px
+}
+
+.inner .inner-menu .menu2 {
+    background-position: -130px 0
+}
+
+.inner .inner-menu .menu2:hover, .menu2.active {
+    background-position: -130px -29px
+}
+
+.inner .inner-menu .menu3 {
+    background-position: -260px 0
+}
+
+.inner .inner-menu .menu3:hover, .menu3.active {
+    background-position: -260px -29px
+}
+
+.inner .inner-menu .menu5 {
+    background-position: -616px 0
+}
+
+.inner .inner-menu .menu5:hover, .menu5.active {
+    background-position: -616px -29px
+}
+
+.inner .inner-menu .menu6 {
+    background-position: -746px 0
+}
+
+.inner .inner-menu .menu6:hover, .menu6.active {
+    background-position: -746px -29px
+}
+
+.inner .inner-menu .menu7 {
+    background-position: -876px 0
+}
+
+.inner .inner-menu .menu7:hover, .menu7.active {
+    background-position: -876px -29px
+}
+
+.inner .inner-menu li .menu6 {
+    margin-right: 0;
+}
+
+.inner .inner-top {
+    height: 1249px;
+    margin-top: 420px;
+    /*background-color: pink;*/
+}
+
+.inner .inner-top .inner-top-list {
+    width: 100%;
+    height: 54px;
+    border-bottom: 3px solid black;
+}
+
+.inner .inner-top .inner-top-list .ziliao {
+    width: 199px;
+    height: 40px;
+    float: left;
+    background: url("../images/guide_z_d7732fa.png") no-repeat -198px -480px;
+}
+
+.inner-top-list .ci-list {
+    width: 475px;
+    height: 54px;
+    float: left;
+    margin-left: 80px;
+}
+
+.inner-top-list .ci-list li {
+    float: left;
+    width: 90px;
+    height: 54px;
+    position: relative;
+}
+
+.inner-top-list .ci-list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/inner_nav_6959b46.png") no-repeat;
+}
+
+.inner-top-list .ci-list .list1 {
+    z-index: 2;
+    background-position: 0 0;
+}
+
+.inner-top-list .ci-list .list2 {
+    background-position: -92px 0;
+}
+
+.inner-top-list .ci-list .list3 {
+    background-position: -188px 0;
+}
+
+/*.inner-top-list .ci-list .active em {*/
+/*background:url("../images/guide_z_d7732fa.png") no-repeat -540px -180px;*/
+/*}*/
+/*暂时影藏*/
+/*.inner-top-list .ci-list em {*/
+/*display: inline-block;*/
+/*width: 75px;*/
+/*height: 54px;*/
+/*position: absolute;*/
+/*bottom: -3px;*/
+/*left: 0;*/
+/*z-index: 1;*/
+/*display: none;*/
+/*background:url("../images/guide_z_d7732fa.png") no-repeat -540px -180px;*/
+
+/*}*/
+
+.inner-top-list .ci-list .list1:hover {
+    background: url("../images/inner_nav-2_d412a96.png") no-repeat;
+    background-position: 0 0;
+}
+
+.inner-top-list .ci-list .list2:hover {
+    background: url("../images/inner_nav-2_d412a96.png") no-repeat;
+    background-position: -92px 0;
+}
+
+.inner-top-list .ci-list .list3:hover {
+    background: url("../images/inner_nav-2_d412a96.png") no-repeat;
+    background-position: -188px 0;
+}
+
+.inner-top-list .gamezl {
+    width: 160px;
+    height: 54px;
+    float: right;
+    font-size: 14px;
+    line-height: 54px;
+}
+
+.inner-top-list .gamezl i {
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    background: url("../images/icon_bc29691.png") no-repeat;
+}
+
+.inner-top-list .gamezl a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #c1a464;
+    height: 54px;
+}
+
+.inner-top-list .gamezl a:hover {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+}
+/*左侧栏css开始*/
+.inner .slide {
+    width: 200px;
+    height: 970px;
+    position: fixed;
+    top:55px;
+    left:-200px;
+    z-index:30;
+    background: url("../images/slide_bg_5b14694.png") no-repeat;
+}
+.inner .slide .slide-trigger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -27px;
+    font-size: 14px;
+    width: 27px;
+    background-color: #ac3c26;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    padding: 10px 0;
+    transition:all 0.3s ease-in;
+}
+.inner .slide .slide-trigger:hover {
+    background-color: #c15945;
+}
+.inner .slide .slide-trigger i {
+    background: url("../images/icon-float-bar.png") no-repeat;
+}
+.inner .slide.opened .slide-trigger i {
+    background-position: -87px -11px;
+}
+.inner .slide .slide-trigger i {
+    display: block;
+    width: 9px;
+    height: 15px;
+    background-position: -87px -53px;
+    margin: 5px auto 0;
+}
+.inner .slide .slide-title {
+    width: 128px;
+    height: 155px;
+    background: url("../images/inner_z_c016bbf.png") no-repeat 0 0;
+    margin: 30px auto 15px;
+}
+.inner .slide .slide-btns {
+    width: 140px;
+    margin:0 auto;
+}
+.inner .slide .slide-btns a {
+    display: block;
+    width: 140px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.inner .slide .slide-btns .btns-t {
+    background: url("../images/inner_z_c016bbf.png") no-repeat -229px -155px;
+}
+.inner .slide .slide-btns .btns-b {
+    background: url("../images/inner_z_c016bbf.png") no-repeat -154px -209px;
+}
+.inner .slide .slide-code {
+    width: 140px;
+    height: 140px;
+    background: url("../images/inner_z_c016bbf.png") no-repeat -128px 0px;
+    margin: 35px auto 0;
+}
+#libao {
+    display: block;
+    width: 154px;
+    height: 136px;
+    background: url("../images/inner_z_c016bbf.png") no-repeat -265px 0px;
+    margin:26px auto 0;
+}
+/*右侧栏css结束*/
+/*隐藏栏css开始*/
+.inner-menu .bbs {
+    width: 111px;
+    height: 316px;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    background: url("../images/bbs_eaca230 (1).png") no-repeat;
+}
+.inner-menu .bbs .bbs1 {
+    width: 86px;
+    height: 32px;
+    margin-top:25px;
+    margin-left:12px;
+    background: url("../images/nav_z_2ae8ddb.png") no-repeat 0px -85px;
+}
+.inner-menu .bbs .bbs2 {
+    width: 32px;
+    height: 32px;
+    margin:261px 0 0 39px;
+    background: url("../images/nav_z_2ae8ddb.png") no-repeat -172px -85px;
+}
+
+/*隐藏栏css结束*/
+/*项目内容结束*/
+/*项目底部开始*/
+.footer {
+    width: 870px;
+    height: 120px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-435px;
+}
+.footer .share {
+    width: 260px;
+    height: 36px;
+    margin:0 auto 20px;
+
+}
+.footer .share span {
+    float: left;
+    font-size: 18px;
+    height: 36px;
+    line-height: 36px;
+    color:#4d4d4d;
+}
+.footer .share .sp1 {
+    width: 175px;
+    height: 36px;
+}
+.footer .share .sp1 a {
+    display: inline-block;
+    width: 39px;
+    height: 36px;
+}
+.footer .share .sp1 a .iconfont {
+    display: inline-block;
+    color:#4d4d4d;
+    font-size: 36px;
+    line-height: 36px;
+}
+.footer .share .sp1 a .iconfont:hover {
+    font-size: 40px;
+    color: #fff;
+}
+.footer #Foodinner .f_inner .part1{
+    width: 750px;
+    text-align: left;
+    padding: 10px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    margin:0 auto;
+    color: #fff;
+
+}
+
+.footer #Foodinner .f_inner .part1 .db-logo{
+    display: inline-block;
+    height: 50px;
+    width: 330px;
+
+}
+
+.footer #Foodinner .f_inner .part1 .db-logo a {
+    display: inline-block;
+}
+.footer #Foodinner .inner img{
+    padding-top: 2px;
+    border: 0;
+    vertical-align: middle;
+
+}
+.footer #Foodinner .part1 .db-nav {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #fff;
+    line-height: 20px;
+    /*z-index: 1;*/
+}
+.footer #Foodinner .part1 .db-nav i a {
+
+    color: #fff;
+}
+.footer #Foodinner .part1 .db-nav i a:hover{
+
+    text-decoration: underline;
+}
+.footer #Foodinner .part1 .db-nav .shop{
+    display: inline-block;
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px;
+    color: #fff;
+}
+/*项目底部结束*/

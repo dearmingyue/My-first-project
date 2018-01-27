@@ -1,0 +1,588 @@
+body,
+a,
+p,
+input,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+div,
+span,
+i,
+em,
+img,
+b,
+strong {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration:none;
+    color: #999;
+}
+a:hover {
+    color: #f10215;
+}
+
+input {
+    border: 0 none;
+    outline: none;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+div{
+display: block;
+}
+.fl{
+    float: left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    background-color: #f6f6f6;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom:1;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*以上为初始化代码-------------------*/
+
+
+/*头部开始*/
+
+
+.block3{
+    /*margin: 0 auto;*/
+    /*width: 1343px;*/
+    height: 1550px;
+    background: url("../images/bg3.jpg") no-repeat center top ;
+    overflow: hidden;
+
+}
+.block3 .main{
+    position: relative;
+    /*background-color: green;*/
+    height: 1285px;
+    overflow: hidden;
+}
+
+
+.block3 .main .data{
+    width: 1030px;
+    height: 490px;
+}
+.block3 .main .data .data-left{
+    width: 450px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 40px;
+    /*overflow: hidden;*/
+}
+
+/*左边三个数据资料----------------------*/
+
+
+
+.main .data .pane1{
+    width: 360px;
+    height: 80px;
+    border-bottom: 1px dashed #a5a5a5;
+    /*overflow: hidden;*/
+}
+.main .data .pane1 .title1{
+    width: 103px;
+    height: 41px;
+    margin-top: 20px;
+    background: url("../images/nav_data.png") 0 0;
+
+}
+.main .data .pane1 .content{
+    /*width: 280px;*/
+    height: 28px;
+    margin-top: 28px;
+    overflow: hidden;
+
+}
+.main .data .pane1 .content a{
+    display: block;
+    /*width: 60px;*/
+    height: 28px;
+    float: left;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 10px;
+    color: #debe78;
+}
+.main .data .content a:hover {
+    background: #debe78;
+    color: #000;
+}
+
+
+/*----------------------------------------*/
+.main .data .pane2{
+    width: 360px;
+    height: 110px;
+    border-bottom: 1px dashed #a5a5a5;
+    /*overflow: hidden;*/
+}
+.main .data .pane2 .title2{
+    width: 103px;
+    height: 41px;
+    margin-top: 35px;
+    background: url("../images/nav_data.png") 0 -95px;
+}
+.main .data .pane2 .content{
+    width: 255px;
+    height: 76px;
+    margin-top: 35px;
+    overflow: hidden;
+}
+.main .data .pane2 .content a{
+    display: block;
+    /*width: 60px;*/
+    height: 28px;
+    float: left;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 10px;
+    color: #debe78;
+}
+
+.main .data .content a:hover {
+    background: #debe78;
+    color: #000
+}
+
+/*------------------------------------------------*/
+.main .data .pane3{
+    width: 360px;
+    height: 110px;
+    border-bottom: 1px dashed #a5a5a5;
+}
+
+.main .data .pane3 .title3{
+    width: 103px;
+    height: 41px;
+    margin-top: 35px;
+    background: url("../images/nav_data.png") 0 -205px;
+}
+.main .data .pane3 .content{
+    width: 255px;
+    height: 76px;
+    margin-top: 24px;
+    overflow: hidden;
+
+}
+.main .data .pane3 .content a{
+    display: block;
+    /*width: 60px;*/
+    height: 28px;
+    float: left;
+    /*position: relative;*/
+    font-size: 12px;
+    text-align: center;
+    line-height: 28px;
+    margin-left: 10px;
+    color: #debe78;
+}
+
+.main .data .content a:hover {
+    background: #debe78;
+    color: #000
+}
+/*-------------------------------------------*/
+
+.block3 .data-right{
+    width: 525px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+
+
+.block3 .main .tuku{
+    width: 1200px;
+    position: relative;
+    margin: 45px auto 0;
+    height: 740px;
+}
+
+.block3 .main .tuku li{
+    position: relative;
+}
+
+.block3 .main .tuku .bk{
+    width: 430px;
+    height: 230px;
+    border: 3px solid #c8ae6f;
+    padding: 10px;
+}
+
+.block3 .main .tuku .niutu{
+    overflow: hidden;
+    position: relative;
+    width: 430px;
+    height: 230px;
+
+}
+
+
+.block3 .main .tuku .niutu ul{
+    width: 2150px;
+    height: 230px;
+    position: relative;
+    left: 0;
+    top: 0;
+
+}
+.block3 .main .tuku .niutu li{
+    float: left;
+    width: 430px;
+    height: 230px;
+    /*margin-right: 20px;*/
+    overflow: hidden;
+
+}
+
+.block3 .main .tuku .niutu li img{
+
+    width: 430px;
+    height: 230px;
+    display: block;
+
+}
+.block3 .main .tuku .tk-nav{
+    width: 450px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: 150px;
+    top: 38px;
+}
+.block3 .main .tuku .tk-nav li{
+    float: left;
+    cursor: pointer;
+    width: 70px;
+    height: 88px;
+    margin-right: 80px;
+    background: url(../images/tu-ku.png) no-repeat;
+}
+.block3 .main .tuku .tk-nav .tk1{
+
+}
+
+.block3 .tuku .tk-nav .tk1:hover {
+    background-position: 0 -88px;
+}
+
+.block3 .main .tuku .tk-nav .tk2{
+    background-position: -151px 0;
+}
+
+.block3 .tuku .tk-nav .tk2:hover {
+    background-position: -151px -88px;
+}
+
+.block3 .main .tuku .tk-nav .tk3{
+    background-position: -300px 0;
+}
+
+.block3 .tuku .tk-nav .tk3:hover {
+    background-position: -300px -88px;
+}
+
+.block3 .main .tuku .scene{
+    width: 465px;
+    height: 480px;
+    position: relative;
+    left: 0;
+    top: 25px;
+    overflow: hidden;
+    display: block;
+
+}
+
+.block3 .main .tuku .scene li {
+
+
+    float: left;
+}
+
+.block3 .main .tuku .scene1{
+
+    margin-right: 30px
+}
+
+.block3 .main .tuku .scene2{
+
+    margin-bottom: 28px;
+}
+.tuku .card_border{
+    width: 170px;
+    height: 126px;
+    margin-top: -63px;
+    margin-left: -85px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    opacity: 1;
+}
+
+.tuku .scene .scene1 .card_border {
+    width: 240px;
+    height: 456px;
+    margin-top: -228px;
+    margin-left: -120px;
+}
+
+.block3 .main .tuku .scene3{
+
+    margin-bottom: 28px;
+
+}
+
+.block3 .main .tuku .scene4{
+
+    margin-bottom: 28px;
+
+}
+
+.block3 .main .tuku .bz{
+    width: 660px;
+    height: 470px;
+    position: absolute;
+    right: 0;
+    top: 280px;
+
+}
+.tuku .bz .bz1 .card_border{
+    width: 440px;
+    height: 210px;
+    margin-top: -105px;
+    margin-left: -220px;
+}
+
+
+.block3 .main .tuku .bz li{
+    position: absolute;
+}
+.block3 .main .tuku .bz img{
+    display: block;
+}
+.block3 .main .tuku .bz .bz1{
+
+}
+.block3 .main .tuku .bz .bz2{
+    position: absolute;
+    top:245px;
+}
+
+.tuku .bz .bz2 .card_border{
+    width: 440px;
+    height: 210px;
+    margin-top: -105px;
+    margin-left: -220px;
+}
+.block3 .main .tuku .bz .bz3{
+    position: absolute;
+    left: 480px;
+}
+.block3 .main .tuku .bz .bz4{
+    position: absolute;
+    left: 480px;
+    top: 165px;
+}
+.block3 .main .tuku .bz .bz5{
+    position: absolute;
+    left: 480px;
+    top: 330px;
+}
+
+.block3 .share{
+    width: 300px;
+    height: 50px;
+    margin:50px auto 0px;
+    color: #fff;
+    /*background-color: blue;*/
+}
+
+.block3 .share .share1{
+    position: relative;
+    font-size: 0px;
+    display: inline-block;
+    line-height: 0;
+    color: #4d4d4d;
+}
+
+.block3 .share1 span{
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+}
+.block3 .share1 .iconBtn{
+    list-style: none;
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 170px;
+    height:30px;
+}
+
+.block3 .share1 .iconBtn li{
+    text-decoration: none;
+    font-weight: 400;
+    text-align: left;
+    font-family: simSun,Arial;
+
+}
+.block3 .share1 .iconBtn li a{
+    line-height: 30px;
+    font-size: 36px;
+    display: inline-block;
+    float: left;
+    color: #4d4d4d;
+    margin-right: 5px;
+
+
+}
+.block3 .share1 .iconBtn a:hover {
+    color: #b3b5b5;
+}
+
+
+.block3 .foot{
+    text-align: center;
+    color: #fff;
+}
+
+
+.block3 .foot #Foodinner{
+    color: #fff;
+
+}
+
+.block3 .foot #Foodinner .inner{
+    width: 870px;
+    height: 120px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    /*background-color: blue;*/
+
+}
+
+.foot #Foodinner .inner .part1{
+    width: 870px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.foot #Foodinner .inner .part1 .db-logo{
+display: inline-block;
+vertical-align: middle;
+height: 50px;
+width: 350px;
+color: #fff;
+
+}
+
+.foot #Foodinner .inner .part1 .db-logo a{
+    color: #fff;
+}
+.foot #Foodinner .inner img{
+    padding-right: 15px;
+    padding-top: 2px;
+    border: 0;
+    vertical-align: middle;
+
+}
+.foot #Foodinner .part1 .db-nav{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: #fff;
+    /*z-index: 1;*/
+}
+.foot #Foodinner .part1 .db-nav a{
+    color: #fff;
+}
+
+.foot #Foodinner .part1 .db-nav .shop{
+    display: inline-block;
+    color: #fff;
+    background-color: #610000;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 3px;
+    top: 21px;
+}
+
+.foot #Foodinner .inner .part2{
+    padding-top: 0px;
+    line-height: 24px;
+    font-size: 12px;
+    width: 885px;
+}
